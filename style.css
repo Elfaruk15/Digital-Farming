@@ -3,7 +3,7 @@ body{
     background-color: lightblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     h1{
-        color: darkred;
+        color: blue;
         text-align: center;
         margin-top: 50px;
     }
@@ -15,11 +15,13 @@ nav ul{
     background-color: green;
     padding: 0%;
     margin: 0%;
+    max-width: 100%;
+    max-height: 100%;
     height: 100px;
     overflow: hidden;
 }
 nav li{
-    float: inline-end; 
+    float:inline-start; 
 }
 nav a{
     color: white;
@@ -35,21 +37,23 @@ nav a:hover{
 
 /*body index*/
 body.index{
-    .image-box img{
-        justify-content: center;
-        flex: 100%; 
-        width: auto;
-        height: auto;
-        width: 50%; 
+    .image-box{
         max-width: 100%;
+        max-height: 100%;
         margin: 15px;
-        border: 2px solid;
-        position: relative;  
+        padding: 15px;
+        text-align: center;
+        background-color: green;
+    }
+    .image-box img{
+        justify-content: center; 
+        width: 400px; 
+        height: 400px;
+        border: 2px solid;  
     }
     .text-box{
        flex: 100%;
        text-align: justify;
-       font-size: large;
        margin: 15px;
        padding: 15px;
        border: 2px solid;
@@ -67,14 +71,17 @@ body.index{
     body.hub2{
         .container{ 
             position: relative;
-            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
             margin: 5px;
+            margin-top: 15px;
             text-align: center;
+            background-color: green;
 
         }
         .container iframe{
-            position: relative;
-            width: 90%;
+            width: 400px;
+            margin: 15px;
         
         }
     }
