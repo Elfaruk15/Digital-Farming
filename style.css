@@ -46,7 +46,9 @@ body.index{
         background-color: green;
     }
     .image-box img{
-        justify-content: center; 
+        justify-content: center;
+        max-width: 100%;
+        max-height: 100%; 
         width: 400px; 
         height: 400px;
         border: 2px solid;  
@@ -80,6 +82,7 @@ body.index{
 
         }
         .container iframe{
+            max-width: 100%;
             width: 400px;
             margin: 15px;
         
